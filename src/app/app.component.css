@@ -1,0 +1,48 @@
+.poke-content{
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 80%;
+  right: 10%;
+  left: 10%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.poke-card{
+    padding: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+td{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.bgc-green{
+  background-color: rgba(6, 112, 6, 0.768);
+}
+.bgc-purple {
+  background-color: rgba(128, 0, 128, 0.644);
+}
+.bgc-red {
+  background-color: rgba(255, 68, 0, 0.81);
+}
+.bgc-aqua {
+  background-color: rgba(0, 255, 255, 0.499);
+}
+.bgc-green-light {
+  background-color: rgba(172, 255, 47, 0.668);
+}
+.bgc-gray {
+  background-color: gainsboro;
+}
+.bgc-yellow {
+  background-color: rgba(255, 255, 0, 0.618);
+}
+.bgc-brown {
+  background-color: rgba(255, 228, 196, 0.642);
+}
+.bgc-default {
+  background-color: whitesmoke;
+}
