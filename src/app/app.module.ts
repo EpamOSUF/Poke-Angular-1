@@ -4,16 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { weightPipe, heightPipe } from './shared/pipes';
+import { PokeListComponent } from './features/poke-list/poke-list.component';
+import { PokeItemComponent } from './features/poke-item/poke-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    weightPipe, heightPipe,
+    PokeListComponent, PokeItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

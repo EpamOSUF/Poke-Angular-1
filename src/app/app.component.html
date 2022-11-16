@@ -1,34 +1,3 @@
-<div class="poke-content card">
-  <ul class="mx-auto">
-    <li *ngFor="let poke of pokeData">
-      <h3 class="text-capitalize" role="button" (click)="handleDetailsPoke(poke.id)">{{poke.name}}</h3>
-      <div *ngIf="pokeSelected === poke.id">
-        <table class="table " [ngClass]="handleBGColor(poke.types[0].type.name)">
-          <thead>
-            <tr>
-              <th scope="col">PokéDex No.</th>
-              <th scope="col">Sprite</th>
-              <th scope="col">Name</th>
-              <th scope="col">Types</th>
-              <th scope="col">Height, Weight</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <th scope="row">{{poke.id}}</th>
-              <td><img src={{poke.sprites.front_default}} alt="poke-sprite"></td>
-              <td>{{poke.name}}</td>
-              <td>
-    <li *ngFor="let type of poke.types">
-      {{type.type.name}}
-    </li>
-    </td>
-    <td>{{poke.height | heightPipe}} /// {{poke.weight|weightPipe}}</td>
-    </tr>
-    </tbody>
-    </table>
-</div>
-</li>
-</ul>
+<div>
+  <app-poke-list></app-poke-list>
 </div>

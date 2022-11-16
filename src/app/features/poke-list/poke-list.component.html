@@ -1,0 +1,9 @@
+<div class="poke-content card">
+  <ul class="mx-auto">
+    <li *ngFor="let poke of pokeData">
+      <div role="button" (click)="handleDetailsPoke(poke.id)">
+        <app-poke-item [pokemon]=poke [pokeSelected]="pokeSelected"></app-poke-item>
+      </div>
+    </li>
+  </ul>
+</div>

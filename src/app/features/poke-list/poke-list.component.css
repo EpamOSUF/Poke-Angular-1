@@ -1,0 +1,9 @@
+.poke-content {
+  position: absolute;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 80%;
+  right: 10%;
+  left: 10%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}

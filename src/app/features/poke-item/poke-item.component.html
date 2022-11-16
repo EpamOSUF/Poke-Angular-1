@@ -1,0 +1,32 @@
+<div *ngIf="pokeSelected !== pokemon.id">
+  <h3 class="text-capitalize">{{pokemon.name}}</h3>
+  <img src={{pokemon.sprites.front_default}} alt="pokemon-sprite">
+</div>
+
+<div class="mt-2" *ngIf="pokeSelected === pokemon.id">
+  <table class="table data-poke" [ngClass]="handleBGColor(pokemon.types[0].type.name)">
+    <thead>
+      <tr>
+        <th scope="col">PokéDex No.</th>
+        <th scope="col">Sprite</th>
+        <th scope="col">Name</th>
+        <th scope="col">Types</th>
+        <th scope="col">Height, Weight</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">{{pokemon.id}}</th>
+        <td><img src={{pokemon.sprites.front_default}} alt="pokemon-sprite"></td>
+        <td>{{pokemon.name}}</td>
+        <td>
+          <li *ngFor="let type of pokemon.types">
+            {{type.type.name}}
+          </li>
+        </td>
+        <td>{{pokemon.height }} , {{pokemon.weight}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
