@@ -1,23 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { InterceptorService } from './auth/services/interceptor.service';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AuthModule } from './auth/auth.module';
 
-import { PokeListComponent } from './features/poke-list/poke-list.component';
-import { PokeItemComponent } from './features/poke-item/poke-item.component';
+import { PokeListModule } from './features/poke-list/poke-list.module';
+import { SharedModule } from './shared/shared.module';
+import { LoginModule } from './features/login/login.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PokeListComponent, PokeItemComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
+    AuthModule,
+    PokeListModule,
+    SharedModule,
+    LoginModule,
   ],
-  providers: [],
+  providers: [Window, {
+      provide : HTTP_INTERCEPTORS,
+      useClass: InterceptorService,
+      multi   : true,
+    },],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

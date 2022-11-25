@@ -1,0 +1,50 @@
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin: -150px 0 0 -150px;
+}
+
+.input-form{
+  width: 300px;
+}
+
+.input-form-error {
+  border-color: red;
+}
+
+.button-login-display {
+  width: 50%;
+  margin: 0 auto;
+}
+.register-small{
+  position: relative;
+  top: 80px;
+  width: 278px;
+  height: 40px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* or 125% */
+  text-align: center;
+
+  /* primary/efx-dark */
+  color: #333E48;
+}
+
+.register-anchor{
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.message-error{
+  color: red;
+}

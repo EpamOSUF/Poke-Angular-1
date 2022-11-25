@@ -1,0 +1,45 @@
+.header-body{
+  padding: 30px;
+  background-color: whitesmoke;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+  height: 100px;
+}
+
+.logout-button{
+  float: right;
+  background-color: aqua;
+
+  justify-content: center;
+  align-items: center;
+  padding: 5px 18px;
+  gap: 10px;
+
+  width: 140px;
+  height: 50px;
+
+  background: #007298;
+  border-radius: 4px;
+}
+
+.username-p{
+  float: right;
+  margin-right: 33px;
+  padding-top: 10px;
+
+  width: 90px;
+  height: 20px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* primary/efx-dark */
+  color: #333E48;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
